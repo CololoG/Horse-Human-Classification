@@ -8,7 +8,7 @@ You can uncomment any model to use it.
 These models were made in visual studio code so there might be minor adjustments needed if you are using google colab or jupyter notebook.
 The main difference in code that I have noticed is in the output layer where in google colab i needed change it to the following:
 
-model.add(Dense(1,activation='sigmoid'))
+model.add(Dense(2,activation='sigmoid'))
 
 Any other issues might be fixed by installing some libraries that are not pre-installed in google colab or jupyter notebook.
 I am using this code in a virtual environment so some libraries might need to be installed manually.
@@ -275,4 +275,5 @@ print(cm)
 
 print("Classification Report:")
 print(classification_report(true_labels, predicted_labels))
+
 
