@@ -12,7 +12,15 @@ model.add(Dense(1,activation='sigmoid'))
 
 Any other issues might be fixed by installing some libraries that are not pre-installed in google colab or jupyter notebook.
 I am using this code in a virtual environment so some libraries might need to be installed manually.
-the dataset can be found at the following link: https://www.kaggle.com/datasets/sanikamal/horses-or-humans-dataset
+The dataset can be found at the following link: https://www.kaggle.com/datasets/sanikamal/horses-or-humans-dataset
+The file structure shuold be like the following:
+test
+-horses
+-humans
+train
+-horses
+-humans
+
 Important note: This code will not compile unless one of the models is uncommented.
 """
 
@@ -267,3 +275,4 @@ print(cm)
 
 print("Classification Report:")
 print(classification_report(true_labels, predicted_labels))
+
